@@ -32,8 +32,8 @@
 			}
 		}
 		.languageButtonsContainer {
-			display: none;
-			// display: grid;
+			// display: none;
+			display: grid;
 			width: 100%;
 			grid-column: 22/24;
 			grid-template-columns: repeat(2, 1fr);

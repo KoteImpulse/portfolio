@@ -1,6 +1,6 @@
 {
-	"seoTitle": "Portfolio work {{brand}}",
-	"seoDesc": "Portfolio work page",
-	"headerText": "Portfolio work {{brand}}",
-	"tickerText": "Recent works \u276F\u00a0\u00a0\u00a0"
+	"seoTitle": "Работа портфолио {{brand}}",
+	"seoDesc": "Страница с работой портфолио",
+	"headerText": "Работа портфолио {{brand}}",
+	"tickerText": "Новые работы \u276F\u00a0\u00a0\u00a0"
 }

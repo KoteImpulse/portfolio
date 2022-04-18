@@ -2,39 +2,39 @@
 	"menu": [
 		{
 			"id": 1,
-			"alias": "Works",
+			"alias": "Работы",
 			"title": "portfolio",
-			"header": "Portfolio",
-			"description": "Recent works",
+			"header": "Портфолио",
+			"description": "Новые работы",
 			"link": false,
 			"content": [
 				{
 					"id": 1,
-					"alias": "Design",
+					"alias": "Дизайн",
 					"title": "category/design",
 					"link": true
 				},
 				{
 					"id": 2,
-					"alias": "Websites",
+					"alias": "Сайты",
 					"title": "category/website",
 					"link": true
 				},
 				{
 					"id": 3,
-					"alias": "Ecommerce",
+					"alias": "Магазины",
 					"title": "category/ecommerce",
 					"link": true
 				},
 				{
 					"id": 4,
-					"alias": "Maintenance",
+					"alias": "Порталы",
 					"title": "category/maintenance",
 					"link": true
 				},
 				{
 					"id": 5,
-					"alias": "Brand",
+					"alias": "Бренд",
 					"title": "category/brand",
 					"link": true
 				}
@@ -42,27 +42,27 @@
 		},
 		{
 			"id": 2,
-			"alias": "Services",
+			"alias": "Услуги",
 			"title": "services",
-			"header": "Services",
-			"description": "Our services",
+			"header": "Услуги",
+			"description": "Наши услуги",
 			"link": false,
 			"content": [
 				{
 					"id": 1,
-					"alias": "Design",
+					"alias": "Веб-дизайн",
 					"title": "services/design",
 					"link": true
 				},
 				{
 					"id": 2,
-					"alias": "Website creation",
+					"alias": "Создание сайтов",
 					"title": "services/websites",
 					"link": true
 				},
 				{
 					"id": 3,
-					"alias": "Ecommerce creation",
+					"alias": "Интернет магазин",
 					"title": "services/ecommerces",
 					"link": true
 				}
@@ -70,42 +70,40 @@
 		},
 		{
 			"id": 3,
-			"alias": "Contacts",
+			"alias": "Контакты",
 			"title": "contactus",
 			"link": true
 		},
 		{
 			"id": 4,
-			"alias": "About us",
+			"alias": "О нас",
 			"title": "aboutus",
 			"link": true
 		},
 		{
 			"id": 5,
-			"alias": "Blog",
+			"alias": "Блог",
 			"title": "blog",
 			"link": true
 		}
 	],
 	"menuDefaultContent": {
-		"id": 1,
-		"headerText": "About us",
-		"headerDesc": "Create websites and ecommerces\u000Aдля роста Вашего бизнеса",
-		"listHeader": "We are chosen when needed:",
+		"id": 0,
+		"headerText": "О нас",
+		"headerDesc": "Создаем сайты и интернет-магазины\u000Aдля роста Вашего бизнеса",
+		"listHeader": "Нас выбирают, когда нужно:",
 		"listItems": [
-			"Launch a project as soon as possible",
+			"Запустить проект в кротчайшие сроки",
 			"Качественно сделать техническую часть",
 			"Когда Вы знаете цену деньгам и нужно сделать быстрее, чем это сделают конкуренты",
 			"Не хватает времени и специалистов сделать все самому"
 		]
 	},
 	"loader": {
-		"loaderText": "Loading...",
-		"dataNotLoaded": "Hmm... Failed to load the data. Try again\u000Aor write to the manager"
+		"loaderText": "Загружаем работы",
+		"dataNotLoaded": "Хм... Не удалось загрузить работы. Попробуйте ещё раз\u000Aили напишите менеджеру"
 	},
 	"benefits": {
-		"seoTitle": "Ваша выгода",
-		"seoDesc": "Ваша выгода",
 		"headerText": "Ваша выгода",
 		"texts": [
 			{
@@ -140,6 +138,22 @@
 				"id": 8,
 				"text1": "Собирает данные для индивидуальных предложений каждому клиенту"
 			}
+		]
+	},
+	"questions": {
+		"headerText": "Часто задаваемые вопросы",
+		"texts": [
+			{
+				"id": 1,
+				"text1": "Сколько стоит создание интернет магазина?",
+				"text2": "Стоимость складывается из дизайна, функциональности и сроков. Оценив объем работ из технического задания формируется цена. Напишите нам и наш менеджер поможет рассчитать предварительную стоимость проекта."
+			},
+			{
+				"id": 2,
+				"text1": "Сколько времени занимает создание интернет магазина?",
+				"text2": "Разработка индивидуальных инструментов, подключение платежных систем и других сторонних сервисов, разработка айдентики и фирменного стиля,  оптимизация. Каждая часть занимает время. Больше времени требуется на индивидуальные инструменты и функционал. Напишите нам и наш менеджер поможет рассчитать предварительную стоимость проекта."
+			}
+			
 		]
 	}
 }
