@@ -1,0 +1,33 @@
+.defaultContent {
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(24, 1fr);
+	position: relative;
+	background: var(--colorB);
+	font-size: var(--fsSubMenu);
+	font-family: var(--fontM1);
+	font-weight: 600;
+
+	.tabHeader {
+		grid-column: 2/16;
+		grid-row: 5/10;
+	}
+	.listHeader {
+		grid-column: 2/16;
+		grid-row: 10/12;
+	}
+	.list {
+		grid-column: 2/16;
+		grid-row: 12/20;
+		list-style-position: inside;
+		.listItem {
+			font-size: var(--fsSubMenu);
+			margin-bottom: 1.1vw;
+		}
+	}
+
+	.linkContainer {
+		grid-column: 2/16;
+		grid-row: 20/25;
+	}
+}

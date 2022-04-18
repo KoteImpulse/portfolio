@@ -1,0 +1,85 @@
+@import 'mixins';
+.whatsAppTelegramLinks {
+	display: flex;
+	flex-direction: column;
+	color: var(--colorW);
+	.description {
+		display: flex;
+		margin-bottom: 2vw;
+		font-size: var(--fsMess);
+	}
+	.links {
+		display: flex;
+		flex-direction: row;
+		cursor: pointer;
+
+		.contentBox {
+			display: flex;
+			flex-direction: column;
+			.image {
+				position: relative;
+				height: 5vw;
+				width: 5vw;
+				user-select: none;
+			}
+			.text {
+				display: flex;
+				font-size: var(--fsMess);
+			}
+		}
+	}
+}
+@include mq(991) {
+.whatsAppTelegramLinks{
+	.description{
+		justify-content: center;
+	}
+	.links{
+		justify-content: center;
+		
+	}
+}
+
+}
+
+@include mq(475) {
+	.whatsAppTelegramLinks {
+		.description {
+			font-size: 2vw;
+		}
+		.links {
+			.contentBox {
+				margin-right: unset;
+				.image {
+					justify-content: center;
+					align-items: center;
+					height: 7vw;
+					width: 7vw;
+				}
+				.text {
+					justify-content: center;
+					align-items: center;
+					font-size: 1.5vw;
+				}
+			}
+		}
+	}
+}
+@include mq(320) {
+	.whatsAppTelegramLinks {
+		.description {
+			font-size: 3vw;
+		}
+		.links {
+			.contentBox {
+				.image {
+					height: 10vw;
+					width: 10vw;
+				}
+				.text {
+					font-size: 2.5vw;
+				}
+			}
+		}
+	}
+}

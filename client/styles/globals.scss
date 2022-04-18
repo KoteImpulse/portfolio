@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Display:wght@200;300;400;500;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--colorW: #ffffff;
+	--colorWg: #e8e8e8;
+	--colorLg: #bababa;
+	--colorG: #858585;
+	--colorImg: #3f3f3f;
+	--colorBl: #211c1c;
+	--colorB: #282526;
+	--colorM: #f07464;
+
+	--fontM1: 'Inter', sans-serif;
+	--fontM2: 'Noto Sans Display', sans-serif;
+	--fsH2: 1vw;
+	--fsH2P: 2vw;
+	--fsMenu: 3vw;
+	--fsSubMenu: 1.3vw;
+	--fsBut: 1.5vw;
+	--fsMess: 1.1vw;
+	--fsH2475: 3vw;
+	--fsH2desc475: 3.5vw;
+	--fsH2320: 2.5vw;
+	--fsH2desc320: 3.5vw;
+
+
+
+	--mb1: 1vw;
+
+	--gridColGap: calc(10 / 2360 * 100%);
+	--gridColMargin: calc((100 / 2560) * 100%);
+	--gridCol: calc(88.75 / 2360 * 100%);
+
+	--gridRowGap: calc(10 / 1440 * 100%);
+	--gridRow: calc(50.416 / 1440 * 100%);
+}
+
+body {
+	background-color: var(--colorBl);
+	margin: 0 var(--gridColMargin);
+	font-family: var(--fontM2);
+	color: var(--colorWg);
+	font-size: var(--fsSubMenu);
+	// overflow: hidden;
+
+	// &::after {
+	// 	content: '';
+	// 	z-index: -1000;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	bottom: 0;
+	// 	left: var(--gridColMargin);
+	// 	right: var(--gridColMargin);
+	// 	opacity: 0.15;
+	// 	height: 1000vh;
+	// 	background: repeating-linear-gradient(
+	// 		90deg,
+	// 		blue 0,
+	// 		blue var(--gridCol),
+	// 		white var(--gridColGap),
+	// 		white calc(var(--gridColGap) + var(--gridCol))
+	// 	);
+	// }
+}

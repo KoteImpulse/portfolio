@@ -1,0 +1,55 @@
+@import 'mixins';
+.questions {
+	@include sectionOptions();
+	height: 50vh;
+	.container {
+		display: grid;
+		position: relative;
+		grid-template-columns: repeat(24, 1fr);
+		grid-template-rows: repeat(12, 1fr);
+		column-gap: var(--gridColGap);
+		row-gap: var(--gridRowGap);
+		height: 100%;
+		width: 100%;
+		.headerBlock {
+			display: flex;
+			grid-column: 1/12;
+			grid-row: 1/5;
+			align-items: flex-end;
+			font-family: var(--fontM1);
+			font-size: var(--fsH2P);
+			color: var(--colorWg);
+			white-space: pre;
+			user-select: none;
+			font-weight: 600;
+		}
+		.textContainer {
+			display: grid;
+			grid-template-columns: 45% 45%;
+			grid-column: 1/25;
+			grid-row: 7/12;
+			column-gap: 9.5%;
+			.content {
+				flex-direction: column;
+				.text1 {
+					.mainText {
+						display: inline-flex;
+						position: relative;
+						word-wrap: break-word;
+						margin-bottom: var(--mb1);
+						font-weight: 600;
+					}
+
+					.line {
+						color: var(--colorM);
+					}
+				}
+				.text2 {
+					display: flex;
+					word-wrap: break-word;
+					color: var(--colorLg);
+				}
+			}
+		}
+	}
+}

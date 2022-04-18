@@ -1,0 +1,119 @@
+@import '../../../styles/mixins.scss';
+.section3 {
+	height: 75vh;
+	width: 100%;
+	scroll-snap-align: center;
+	.container {
+		display: grid;
+		position: relative;
+		grid-template-columns: repeat(24, 1fr);
+		grid-template-rows: repeat(18, 1fr);
+		column-gap: var(--gridColGap);
+		row-gap: var(--gridRowGap);
+		height: 100%;
+		width: 100%;
+		.sectionHeaderH2 {
+			grid-column: 1/25;
+			grid-row: 1/7;
+			align-items: flex-end;
+		}
+		.textContainer {
+			display: flex;
+			flex-direction: column;
+			grid-column: 1/25;
+			grid-row: 8/14;
+			.content {
+				flex-direction: column;
+				margin-bottom: 3vw;
+				cursor: pointer;
+				.text1 {
+					.mainText {
+						display: inline-flex;
+						position: relative;
+						word-wrap: break-word;
+						margin-bottom: 1vw;
+						font-weight: 600;
+						.underLineContainer {
+							display: flex;
+							overflow: hidden;
+							position: absolute;
+							bottom: 0;
+							left: 0;
+							width: 100%;
+							.underLine {
+								width: 100%;
+								height: 0.14vh;
+								background-color: var(--colorW);
+							}
+						}
+					}
+
+					.line {
+						color: var(--colorM);
+					}
+				}
+				.text2 {
+					display: flex;
+					word-wrap: break-word;
+					color: var(--colorLg);
+				}
+			}
+		}
+	}
+}
+@include mq(475) {
+	.section3 {
+		.container {
+			.sectionHeaderH2 {
+				div p {
+					word-wrap: break-word;
+					font-size: var(--fsH2desc475);
+				}
+				div h2 {
+					font-size: var(--fsH2475);
+				}
+			}
+			.textContainer {
+				grid-column: 1/25;
+				grid-row: 8/14;
+				font-size: 2.5vw;
+			}
+			.text2 {
+				font-size: 2vw;
+			}
+		}
+	}
+}
+@include mq(320) {
+	.section3 {
+		.container {
+			.sectionHeaderH2 {
+				div p {
+					font-size: var(--fsH2desc320);
+				}
+				div h2 {
+					font-size: var(--fsH2320);
+				}
+			}
+			.textContainer {
+				grid-column: 1/25;
+				grid-row: 8/14;
+				font-size: 4vw;
+				.content{
+					.text1{
+						.mainText{
+							font-size: var(--fsH2desc320);
+
+							.underLineContainer{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+			.text2 {
+				font-size: 3.5vw;
+			}
+		}
+	}
+}

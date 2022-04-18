@@ -1,0 +1,323 @@
+@import 'mixins';
+
+.headerMenu {
+	display: none;
+	position: fixed;
+	grid-template-columns: repeat(24, 1fr);
+	grid-template-rows: repeat(24, 1fr);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	color: var(--colorW);
+	background: transparent;
+	z-index: 2;
+	.tabNav {
+		grid-column: 16/25;
+		grid-row: 1/25;
+		z-index: 2;
+		justify-content: center;
+		align-items: center;
+	}
+	.tabContent {
+		display: grid;
+		grid-template-columns: repeat(16, 1fr);
+		grid-template-rows: repeat(24, 1fr);
+		position: relative;
+		background: var(--colorB);
+		font-size: var(--fsSubMenu);
+		font-family: var(--fontM1);
+		font-weight: 600;
+		grid-column: 1/16;
+		grid-row: 1/25;
+		z-index: 1;
+
+		.tabHeader {
+			grid-column: 2/16;
+			grid-row: 5/10;
+		}
+
+		.itemsContainer {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, 1fr);
+			grid-column: 2/16;
+			grid-row: 10/19;
+		}
+
+		.linkContainer {
+			grid-column: 2/16;
+			grid-row: 20/25;
+		}
+
+		.closeButton {
+			font-size: 25px;
+			position: absolute;
+			bottom: 0;
+			right: 10%;
+			cursor: pointer;
+			svg {
+				width: 5vw;
+				height: 5vw;
+				fill: var(--colorM);
+			}
+		}
+	}
+	.defaultContent {
+		grid-column: 1/16;
+		grid-row: 1/25;
+		z-index: 1;
+	}
+
+	@include mq(991) {
+		background: transparent;
+
+		.tabNav {
+			grid-column: 1/25;
+			grid-row: 1/25;
+			z-index: 1;
+		}
+		// .tabContent {
+		// 	display: flex;
+		// 	position: relative;
+		// 	background: var(--colorB);
+		// 	grid-column: 1/25;
+		// 	grid-row: 1/25;
+		// 	z-index: 2;
+		// }
+		.tabContent {
+			display: grid;
+			grid-template-columns: repeat(24, 1fr);
+			grid-template-rows: repeat(24, 1fr);
+			position: relative;
+			background: var(--colorB);
+			font-size: 3vw;
+			font-family: var(--fontM1);
+			font-weight: 600;
+			grid-column: 1/25;
+			grid-row: 1/25;
+			z-index: 1;
+			font-size: 3vw;
+
+			.tabHeader {
+				grid-column: 1/25;
+				grid-row: 5/8;
+				justify-content: center;
+				div p {
+					font-size: var(--fsH2desc475);
+					align-self: center;
+				}
+				div h2 {
+					font-size: var(--fsH2475);
+					align-self: center;
+				}
+				// .headerbloc {
+				// 	align-items: center;
+				// 	justify-content: center;
+				// }
+			}
+			.itemsContainer {
+				display: grid;
+				grid-template-columns: repeat(1, 1fr);
+				grid-template-rows: repeat(auto-fill, minmax(5vw, 1fr));
+				// grid-template-rows: repeat(5, 1fr);
+				grid-column: 1/25;
+				grid-row: 9/19;
+				justify-content: center;
+				align-items: center;
+				
+			}
+			.linkContainer {
+				grid-column: 1/25;
+			}
+		}
+		.defaultContent {
+			display: none;
+		}
+	}
+}
+// @include mq(475) {
+// 	.headerMenu {
+// 		.tabContent {
+// 			.itemsContainer {
+// 				grid-template-rows: repeat(auto-fill, minmax(5vw, 1fr));
+// 			}
+// 		}
+// 	}
+// }
+@include mq(320) {
+	.headerMenu {
+		.tabContent {
+			.itemsContainer {
+				grid-template-rows: repeat(auto-fill, minmax(12vw, 1fr));
+			}
+		}
+	}
+}
+// @include mq(475) {
+// 	.headerMenu {
+// 		display: none;
+// 		position: fixed;
+// 		grid-template-columns: repeat(24, 1fr);
+// 		grid-template-rows: repeat(24, 1fr);
+// 		height: 100%;
+// 		width: 100%;
+// 		top: 0;
+// 		left: 0;
+// 		right: 0;
+// 		color: var(--colorW);
+// 		background: transparent;
+// 		z-index: 2;
+// 		.tabNav {
+// 			grid-column: 16/25;
+// 			grid-row: 1/25;
+// 			z-index: 2;
+// 			justify-content: center;
+// 			align-items: center;
+// 			div p {
+// 				font-size: 5vw;
+// 			}
+// 		}
+// 		.tabContent {
+// 			display: grid;
+// 			grid-template-columns: repeat(16, 1fr);
+// 			grid-template-rows: repeat(24, 1fr);
+// 			position: relative;
+// 			background: var(--colorB);
+// 			font-size: 3vw;
+// 			font-family: var(--fontM1);
+// 			font-weight: 600;
+// 			grid-column: 1/16;
+// 			grid-row: 1/25;
+// 			z-index: 1;
+
+// 			.tabHeader {
+// 				grid-column: 2/16;
+// 				grid-row: 6/10;
+// 				div p {
+// 					font-size: var(--fsH2desc475);
+// 				}
+// 				div h2{
+// 					font-size: var(--fsH2475);
+// 				}
+// 			}
+
+// 			.itemsContainer {
+// 				display: grid;
+// 				grid-template-columns: repeat(1, 1fr);
+// 				grid-template-rows: repeat(3, 1fr);
+// 				grid-column: 2/16;
+// 				grid-row: 12/18;
+// 			}
+
+// 			.linkContainer {
+// 				grid-column: 2/16;
+// 				grid-row: 20/25;
+// 				div p {
+// 					font-size: var(--fsH2desc475);
+// 				}
+// 			}
+
+// 			.closeButton {
+// 				font-size: 25px;
+// 				position: absolute;
+// 				bottom: 0;
+// 				right: 10%;
+// 				cursor: pointer;
+// 				svg {
+// 					width: 5vw;
+// 					height: 5vw;
+// 					fill: var(--colorM);
+// 				}
+// 			}
+// 		}
+// 		.defaultContent {
+// 			grid-column: 1/16;
+// 			grid-row: 1/25;
+// 			z-index: 1;
+// 		}
+// 	}
+// }
+// @include mq(320) {
+// 	.headerMenu {
+// 		display: none;
+// 		position: fixed;
+// 		grid-template-columns: repeat(24, 1fr);
+// 		grid-template-rows: repeat(24, 1fr);
+// 		height: 100%;
+// 		width: 100%;
+// 		top: 0;
+// 		left: 0;
+// 		right: 0;
+// 		color: var(--colorW);
+// 		background: transparent;
+// 		z-index: 2;
+// 		.tabNav {
+// 			grid-column: 16/25;
+// 			grid-row: 1/25;
+// 			z-index: 2;
+// 			justify-content: center;
+// 			align-items: center;
+
+// 		}
+// 		.tabContent {
+// 			display: grid;
+// 			grid-template-columns: repeat(16, 1fr);
+// 			grid-template-rows: repeat(24, 1fr);
+// 			position: relative;
+// 			background: var(--colorB);
+// 			font-size: 4vw;
+// 			font-family: var(--fontM1);
+// 			font-weight: 600;
+// 			grid-column: 1/16;
+// 			grid-row: 1/25;
+// 			z-index: 1;
+
+// 			.tabHeader {
+// 				grid-column: 2/16;
+// 				grid-row: 6/10;
+// 				div p {
+// 					font-size: 5vw;
+// 				}
+// 				div h2{
+// 					font-size: 3vw;
+// 				}
+// 			}
+
+// 			.itemsContainer {
+// 				display: grid;
+// 				grid-template-columns: repeat(1, 1fr);
+// 				grid-template-rows: repeat(3, 1fr);
+// 				grid-column: 2/16;
+// 				grid-row: 10/18;
+// 			}
+
+// 			.linkContainer {
+// 				grid-column: 2/16;
+// 				grid-row: 20/25;
+// 				div p {
+// 					font-size: var(--fsH2desc475);
+// 				}
+// 			}
+
+// 			.closeButton {
+// 				font-size: 25px;
+// 				position: absolute;
+// 				bottom: 0;
+// 				right: 10%;
+// 				cursor: pointer;
+// 				svg {
+// 					width: 5vw;
+// 					height: 5vw;
+// 					fill: var(--colorM);
+// 				}
+// 			}
+// 		}
+// 		.defaultContent {
+// 			grid-column: 1/16;
+// 			grid-row: 1/25;
+// 			z-index: 1;
+// 		}
+// 	}
+// }

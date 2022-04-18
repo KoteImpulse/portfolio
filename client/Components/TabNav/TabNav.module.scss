@@ -1,0 +1,23 @@
+@import 'mixins';
+
+.tabNav {
+	display: flex;
+	position: relative;
+	background: var(--colorM);
+	.navItems {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		// margin-left: 10%;
+		.navItem {
+		}
+	}
+	@include mq(991) {
+		align-items: center;
+		justify-content: center;
+		.navItems {
+			margin-left: unset;
+			align-items: center;
+		}
+	}
+}

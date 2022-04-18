@@ -1,0 +1,16 @@
+@import 'mixins';
+.tabContentItem{
+	display: flex;
+	position: relative;
+	// margin-bottom: 5%;
+	.itemLink{
+
+	}
+}
+@include mq(991){
+	.tabContentItem{
+		justify-content: center;
+		margin: 2vw 0 2vw 0;
+		
+	}
+}

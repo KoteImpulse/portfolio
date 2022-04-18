@@ -1,0 +1,145 @@
+{
+	"menu": [
+		{
+			"id": 1,
+			"alias": "Works",
+			"title": "portfolio",
+			"header": "Portfolio",
+			"description": "Recent works",
+			"link": false,
+			"content": [
+				{
+					"id": 1,
+					"alias": "Design",
+					"title": "category/design",
+					"link": true
+				},
+				{
+					"id": 2,
+					"alias": "Websites",
+					"title": "category/website",
+					"link": true
+				},
+				{
+					"id": 3,
+					"alias": "Ecommerce",
+					"title": "category/ecommerce",
+					"link": true
+				},
+				{
+					"id": 4,
+					"alias": "Maintenance",
+					"title": "category/maintenance",
+					"link": true
+				},
+				{
+					"id": 5,
+					"alias": "Brand",
+					"title": "category/brand",
+					"link": true
+				}
+			]
+		},
+		{
+			"id": 2,
+			"alias": "Services",
+			"title": "services",
+			"header": "Services",
+			"description": "Our services",
+			"link": false,
+			"content": [
+				{
+					"id": 1,
+					"alias": "Design",
+					"title": "services/design",
+					"link": true
+				},
+				{
+					"id": 2,
+					"alias": "Website creation",
+					"title": "services/websites",
+					"link": true
+				},
+				{
+					"id": 3,
+					"alias": "Ecommerce creation",
+					"title": "services/ecommerces",
+					"link": true
+				}
+			]
+		},
+		{
+			"id": 3,
+			"alias": "Contacts",
+			"title": "contactus",
+			"link": true
+		},
+		{
+			"id": 4,
+			"alias": "About us",
+			"title": "aboutus",
+			"link": true
+		},
+		{
+			"id": 5,
+			"alias": "Blog",
+			"title": "blog",
+			"link": true
+		}
+	],
+	"menuDefaultContent": {
+		"id": 1,
+		"headerText": "About us",
+		"headerDesc": "Create websites and ecommerces\u000Aдля роста Вашего бизнеса",
+		"listHeader": "We are chosen when needed:",
+		"listItems": [
+			"Launch a project as soon as possible",
+			"Качественно сделать техническую часть",
+			"Когда Вы знаете цену деньгам и нужно сделать быстрее, чем это сделают конкуренты",
+			"Не хватает времени и специалистов сделать все самому"
+		]
+	},
+	"loader": {
+		"loaderText": "Loading...",
+		"dataNotLoaded": "Hmm... Failed to load the data. Try again\u000Aor write to the manager"
+	},
+	"benefits": {
+		"seoTitle": "Ваша выгода",
+		"seoDesc": "Ваша выгода",
+		"headerText": "Ваша выгода",
+		"texts": [
+			{
+				"id": 1,
+				"text1": "Специально подобранный функционал"
+			},
+			{
+				"id": 2,
+				"text1": "Хорошо работает и смотрится на всех устройствах"
+			},
+			{
+				"id": 3,
+				"text1": "Удобное и интуитивно понятное управление"
+			},
+			{
+				"id": 4,
+				"text1": "Высокая степень защиты данных"
+			},
+			{
+				"id": 5,
+				"text1": "Быстрая работа интернет-магазина на каждом шаге клиента"
+			},
+			{
+				"id": 6,
+				"text1": "Легко масштабируется и наращивается функционал"
+			},
+			{
+				"id": 7,
+				"text1": "Интегрируется с любыми crm/erp системами и api сторонних ресурсов"
+			},
+			{
+				"id": 8,
+				"text1": "Собирает данные для индивидуальных предложений каждому клиенту"
+			}
+		]
+	}
+}

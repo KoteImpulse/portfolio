@@ -1,0 +1,28 @@
+@import 'mixins';
+.tabItem {
+	display: flex;
+	.itemLink {
+		text-decoration: none;
+		color: var(--colorW);
+		font-family: var(--fontM2);
+		font-size: var(--fsMenu);
+		font-weight: 600;
+		line-height: 1.8;
+		user-select: none;
+		cursor: pointer;
+	}
+}
+@include mq(475) {
+	.tabItem {
+		.itemLink {
+			font-size: 4.5vw;
+		}
+	}
+}
+@include mq(320) {
+	.tabItem {
+		.itemLink {
+			font-size: 6vw;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+@import '../../../client/styles/mixins.scss';
+.ticker {
+	display: flex;
+	.container {
+		display: flex;
+		overflow: hidden;
+
+		.inner {
+			display: flex;
+			flex-shrink: 0;
+
+			.item {
+				position: relative;
+				flex-shrink: 0;
+				flex-basis: 25%;
+				font-size: 3.5vw;
+				color: var(--colorLg);
+				text-transform: uppercase;
+				letter-spacing: 0.5vw;
+				user-select: none;
+				font-weight: 200;
+				text-decoration: none;
+				cursor: pointer;
+
+				.arrow {
+					position: absolute;
+					right: 10%;
+					transform: rotate(-45deg);
+					font-size: 4.5vw;
+				}
+			}
+		}
+	}
+}
+@include mq(475){
+	.ticker {
+		.container {	
+			.inner {	
+				.item {
+					position: relative;
+					flex-shrink: 0;
+					flex-basis: 25%;
+					font-size: 7vw;
+					color: var(--colorLg);
+					text-transform: uppercase;
+					letter-spacing: 0.5vw;
+					user-select: none;
+					font-weight: 200;
+					text-decoration: none;
+					cursor: pointer;
+	
+					.arrow {
+						position: absolute;
+						right: 10%;
+						transform: rotate(-45deg);
+						font-size: 4.5vw;
+					}
+				}
+			}
+		}
+	}
+}
