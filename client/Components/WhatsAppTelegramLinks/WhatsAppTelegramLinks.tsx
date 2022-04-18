@@ -3,7 +3,6 @@ import cn from 'classnames';
 import styles from './WhatsAppTelegramLinks.module.scss';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
 import { useRouter } from 'next/router';
 
 interface WhatsAppTelegramLinksProps
@@ -20,7 +19,7 @@ const WhatsAppTelegramLinks: FC<WhatsAppTelegramLinksProps> = ({
 				{locale === 'ru' ? 'Связаться с нами' : 'Contact us'}
 			</div>
 			<div className={styles.links}>
-				<Link href={'tg://resolve?domain=ux_max'} passHref>
+				<Link href={'#'} passHref>
 					<div className={styles.contentBox}>
 						<div className={styles.image}>
 							<Image
@@ -33,19 +32,6 @@ const WhatsAppTelegramLinks: FC<WhatsAppTelegramLinksProps> = ({
 						<span className={styles.text}>Telegram</span>
 					</div>
 				</Link>
-				{/* <Link href={'/'} passHref>
-					<div className={styles.contentBox}>
-						<div className={styles.image}>
-							<Image
-								src={'/whatsapp.svg'}
-								alt='image'
-								layout='fill'
-								quality={100}
-							/>
-						</div>
-						<span className={styles.text}>WhatsApp</span>
-					</div>
-				</Link> */}
 			</div>
 		</div>
 	);
