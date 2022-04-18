@@ -1,2 +1,2 @@
-# newsApp
-Приложение типа vc.ru на nest js , next js, redux, ts, postgresql
+# portfolioApp
+Сайт портфолио с бд на nest js ,next js, redux, ts, postgresql
